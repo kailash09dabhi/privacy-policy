@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Kailash Dabhi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -17,76 +17,276 @@
             --text-muted: #94a3b8;
             --accent: #38bdf8;
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text-main); line-height: 1.6; background-image: radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 40%), radial-gradient(circle at 90% 80%, rgba(56, 189, 248, 0.1) 0%, transparent 40%); background-attachment: fixed; }
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        header { text-align: center; margin-bottom: 60px; padding: 40px 0; }
-        .logo { font-size: 2.5rem; font-weight: 700; background: linear-gradient(to right, var(--primary), var(--accent)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; letter-spacing: -1px; }
-        .update-date { color: var(--text-muted); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
-        .card { background: var(--card-bg); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 24px; padding: 40px; margin-bottom: 30px; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4); border-color: rgba(99, 102, 241, 0.3); }
-        h2 { font-size: 1.5rem; font-weight: 600; color: var(--accent); margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
-        p { margin-bottom: 18px; color: var(--text-main); opacity: 0.9; }
-        ul { list-style: none; margin-bottom: 20px; }
-        li { margin-bottom: 12px; padding-left: 24px; position: relative; color: var(--text-muted); }
-        li::before { content: '→'; position: absolute; left: 0; color: var(--primary); }
-        .highlight { color: var(--text-main); font-weight: 600; }
-        .table-container { overflow-x: auto; margin: 20px 0; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); }
-        table { width: 100%; border-collapse: collapse; background: rgba(15, 23, 42, 0.5); }
-        th, td { padding: 16px; text-align: left; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-        th { background: rgba(99, 102, 241, 0.1); color: var(--accent); font-weight: 600; }
-        footer { text-align: center; padding: 60px 0; color: var(--text-muted); font-size: 0.9rem; }
-        .contact-btn { display: inline-block; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white; padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 600; margin-top: 20px; transition: all 0.3s ease; box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3); }
-        .contact-btn:hover { transform: scale(1.05); box-shadow: 0 15px 30px rgba(99, 102, 241, 0.4); }
-        @media (max-width: 640px) { .card { padding: 24px; } .logo { font-size: 2rem; } }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(56, 189, 248, 0.1) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px 0;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .update-date {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        p {
+            margin-bottom: 18px;
+            color: var(--text-main);
+            opacity: 0.9;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding-left: 24px;
+            position: relative;
+            color: var(--text-muted);
+        }
+
+        li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+
+        .highlight {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(15, 23, 42, 0.5);
+        }
+
+        th,
+        td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        th {
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 0;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+        }
+
+        .contact-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(99, 102, 241, 0.4);
+        }
+
+        @media (max-width: 640px) {
+            .card {
+                padding: 24px;
+            }
+
+            .logo {
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
+
 <body>
+
     <div class="container">
-        <header><div class="logo">Privacy Center</div><p class="update-date">Last Updated: February 14, 2026</p></header>
+        <header>
+            <div class="logo">Privacy Center</div>
+            <p class="update-date">Last Updated: February 14, 2026</p>
+        </header>
+
         <section class="card">
             <h2>Overview</h2>
-            <p>This Privacy Policy applies to all mobile applications developed by <span class="highlight">Kailash Dabhi</span> and published on the Google Play Store. I am committed to protecting your privacy and ensuring you have a positive experience while using my apps.</p>
-            <p>My apps are designed to be functional and lightweight. I do not collect personal identification information such as your name, email address, or phone number unless you explicitly provide it to me for support purposes.</p>
+            <p>This Privacy Policy applies to all mobile applications developed by <span class="highlight">Kailash
+                    Dabhi</span> and published on the Google Play Store. I am committed to protecting your privacy and
+                ensuring you have a positive experience while using my apps.</p>
+            <p>My apps are designed to be functional and lightweight. I do not collect personal identification
+                information such as your name, email address, or phone number unless you explicitly provide it to me for
+                support purposes.</p>
         </section>
+
         <section class="card">
             <h2>Data Collection & Usage</h2>
-            <p>Depending on which app you use, certain data may be accessed to provide features:</p>
+            <p>Depending on which app you use, certain permissions may be requested to provide specific features. I only
+                request permissions that are necessary for the app to function:</p>
             <ul>
-                <li><span class="highlight">Storage Access:</span> Used to save wallpapers, export audio recordings, or access local music files for playback.</li>
-                <li><span class="highlight">Microphone:</span> Specifically for apps like <span class="highlight">OmRecorder</span>, used only when you initiate a recording. Your audio is processed locally and never uploaded to any servers.</li>
-                <li><span class="highlight">Device IDs:</span> We use Google Advertising IDs (AAID) to serve personalized advertisements through AdMob and to analyze app performance.</li>
+                <li><span class="highlight">Media & Storage:</span> Used to access local music files for playback in
+                    music player apps, save wallpapers, or export audio recordings. This includes <span class="highlight">READ_EXTERNAL_STORAGE</span>, <span class="highlight">WRITE_EXTERNAL_STORAGE</span>, and <span class="highlight">READ_MEDIA_AUDIO</span>.</li>
+                <li><span class="highlight">Microphone:</span> Specifically for recording apps like <span class="highlight">OmRecorder</span>. Your audio is processed locally and is never uploaded to
+                    any servers.</li>
+                <li><span class="highlight">Wallpaper Settings:</span> Used by live wallpaper and puzzle apps to set the
+                    device background (<span class="highlight">SET_WALLPAPER</span>).</li>
+                <li><span class="highlight">Device Status:</span> Music apps may use <span class="highlight">READ_PHONE_STATE</span> to automatically pause playback during an incoming
+                    phone call.</li>
+                <li><span class="highlight">Notifications & Vibration:</span> Used to provide app status updates and
+                    tactile feedback (<span class="highlight">POST_NOTIFICATIONS</span>, <span class="highlight">VIBRATE</span>).</li>
+                <li><span class="highlight">Device IDs:</span> Google Advertising IDs (AAID) are used to serve
+                    non-intrusive advertisements (via AdMob) and for basic performance analytics.</li>
             </ul>
         </section>
+
         <section class="card">
             <h2>Data Safety Summary</h2>
             <div class="table-container">
                 <table>
-                    <thead><tr><th>Data Type</th><th>Collected?</th><th>Shared?</th><th>Purpose</th></tr></thead>
+                    <thead>
+                        <tr>
+                            <th>Data Type</th>
+                            <th>Collected?</th>
+                            <th>Shared?</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
                     <tbody>
-                        <tr><td>Personal Info</td><td>No</td><td>No</td><td>-</td></tr>
-                        <tr><td>Device IDs</td><td>Yes</td><td>Yes</td><td>Ads & Analytics</td></tr>
-                        <tr><td>Audio/Media</td><td>Optional</td><td>No</td><td>App Functionality</td></tr>
+                        <tr>
+                            <td>Personal Info</td>
+                            <td>No</td>
+                            <td>No</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Device IDs</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Ads & Analytics</td>
+                        </tr>
+                        <tr>
+                            <td>Audio/Media</td>
+                            <td>Optional</td>
+                            <td>No</td>
+                            <td>App Functionality</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
         </section>
+
         <section class="card">
             <h2>Third-Party Services</h2>
-            <p>My apps may integrate the following third-party services which collect data according to their own policies:</p>
+            <p>My apps may integrate the following third-party services which collect data according to their own
+                policies:</p>
             <ul>
                 <li><span class="highlight">Google Play Services:</span> For core app functionality.</li>
                 <li><span class="highlight">AdMob:</span> For displaying advertisements.</li>
-                <li><span class="highlight">Firebase Analytics:</span> To understand how users interact with the apps.</li>
+                <li><span class="highlight">Firebase Analytics:</span> To understand how users interact with the apps.
+                </li>
             </ul>
         </section>
-        <section class="card"><h2>Your Rights</h2><p>You have the right to opt-out of personalized advertising through your Android device settings. You can also manage app permissions at any time via the System Settings menu on your device.</p></section>
+
+        <section class="card">
+            <h2>Your Rights</h2>
+            <p>You have the right to opt-out of personalized advertising through your Android device settings. You can
+                also manage app permissions at any time via the System Settings menu on your device.</p>
+        </section>
+
         <section class="card" style="text-align: center;">
             <h2>Contact Support</h2>
             <p>If you have any questions regarding this Privacy Policy or my practices, feel free to contact me.</p>
             <a href="mailto:kailash09dabhi@gmail.com" class="contact-btn">Send an Email</a>
         </section>
-        <footer>&copy; 2026 Kailash Dabhi. All rights reserved.<br>Developed with excellence for the Google Play Community.</footer>
+
+        <footer>
+            © 2026 Kailash Dabhi. All rights reserved.<br>
+            Developed with excellence for the Google Play Community.
+        </footer>
     </div>
 </body>
 </html>
